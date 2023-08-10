@@ -1,0 +1,59 @@
+.title{
+    font-size:50px;
+    font-weight: bold;
+    color: rgb(143, 109, 209);
+    text-align: center;
+}
+form{
+    height: auto;
+    width: 50%;
+    align-items: center;
+    margin-left: 25%;
+}
+fieldset{
+    border-radius: 25px;
+    border: 2px solid rgb(231, 130, 238);
+}
+div{
+   text-align: center;
+   
+}
+legend{
+    color: #5600a7;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+#button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    padding:10px 25px ;
+    font-weight: bold;
+    font-size: 15px;
+    color: azure;
+    background-color:blueviolet ;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(144, 5, 175, 0.15) 0px -36px 30px 0px inset, rgba(144, 5, 175, 0.1) 0px -79px 40px 0px inset, rgba(144, 5, 175, 0.06) 0px 2px 1px, rgba(144, 5, 175, 0.09) 0px 4px 2px, rgba(144, 5, 175, 0.09) 0px 8px 4px, rgba(144, 5, 175, 0.09) 0px 16px 8px, rgba(144, 5, 175, 0.09) 0px 32px 16px;;
+    cursor: pointer;
+   
+
+
+}
+label{
+    color: blueviolet;
+    font-weight: bold;
+}
+.input{
+    padding: 7px ;
+    background-color:#f9e6ff;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid black;
+    box-shadow: inset -1px 1px #ccc;
+    transition:.5s ease all;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size:15px;
+}
