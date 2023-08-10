@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormsCss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>
+    <p class="title">Sign-up</p>
+  </h1>
+  
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personal Details:</legend>
+      <br>
+      <div id="div">
+      <div>
+        <label for="Sal">Salutation:</label>
+        <select id="Sal" name="Sal" class="input">
+          <option value="None">--None-- </option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+
+      <br>
+      <div>
+        <label for="fname">First name:</label>
+        <input class="input" type="text" id="fname" name="fname" value="John"><br><br>
+      </div>
+      <div>
+        <label for="lname">Last name:</label>
+        <input class="input" type="text" id="lname" name="lname" value="Doe"><br><br>
+      </div>
+      <div>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" checked> Male
+        <input  type="radio" name="gender"> Female <br><br>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input class="input" type="email" id="email" name="email"><br><br>
+
+      </div>
+      <div>
+        <label for="birthday">Date of Birth:</label>
+        <input class="input" type="date" id="birthday" name="birthday"><br><br>
+      </div>
+      <div>
+        <label for="Address">Address :</label><br>
+        <textarea class="input"  name="Address" id="Address" cols="30" rows="5"></textarea><br><br>
+
+      </div>
+      <div>
+        <input id="button" type="submit" value="Submit">
+      </div>
+    </div>
+    </fieldset>
+
+  </form>
+</body>
+
+</html>
