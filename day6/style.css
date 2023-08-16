@@ -1,0 +1,260 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --gray: rgb(97, 97, 97);
+    --primary: #1666d1;
+    --mainFont: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: white;
+    overflow: hidden;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
+}
+nav ul li {
+    list-style: none;
+}
+/*****************bar & logo navbar*****************/
+nav ul li img{
+    width: 85px;
+}
+nav ul li:first-of-type{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: rgb(97, 97, 97);
+}
+/********** search bar in navbar**********/
+nav ul li:nth-child(2){
+    margin-left: 2rem;
+    display: flex;
+    width: 45%;
+}
+nav ul li:nth-child(2) input{
+    width: 100%;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 3px 0 0 3px;
+    padding: 0.1rem 0.8rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+nav ul li:nth-child(2) i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem 1.3rem;
+    color: rgb(144, 142, 142);
+    border: 2px solid rgb(214, 214, 214);
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+    background-color: rgb(237, 237, 237);
+}
+/***********right icons navbar************/
+nav ul li:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    color: rgb(97, 97, 97);
+
+}
+nav ul li:nth-child(3) span:last-of-type {
+    font-size: 2rem;
+    font-style: italic;
+    padding: 0 1.2rem 0 0.8rem;
+    font-weight: 700;
+    color: black;
+}
+/****************container********/
+.container {
+    display: flex;
+    padding: 1.2rem 3.3rem;
+    gap: 1.5rem;
+}
+
+
+.video iframe {
+    width: 100%;
+/* position: absolute; */
+    height: 60vh;
+  }
+
+
+/* .video{
+    height: auto;
+    
+    background-color: black;
+    /* background-image: url(); */
+    /* position: relative; 
+} */
+main {
+    width: 68%;
+}
+main > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+
+}
+main > div:nth-child(2) div {
+    margin-top: 2rem;
+    font-family: var(--mainFont);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+}
+/*************hachtage # kIMMEL color****/
+
+main > div:nth-child(2) div p {
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+/*****div vues********/
+main > div:nth-child(2) div .span {
+    color: rgb(141, 141, 141);
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+main > div:nth-child(2) div:first-child span {
+    color: rgb(141, 141, 141);
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+main > div:nth-child(2) div:nth-child(2) ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    position: relative;
+}
+main > div:last-of-type div:nth-child(2) ul li .span1{
+    font-size: 23px;
+}
+/******line grey in <hr>****/
+main > div:last-of-type div:nth-child(2) ul::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 13px);
+    left: 0%;
+    width: 40%;
+    height: 2px;
+    background-color: var(--gray);
+}
+hr{
+    margin-top: 15px;
+    opacity: 0.5;
+}
+/******section***/
+/******main****/
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mainFont);
+}
+section > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile{
+ 
+        margin-top: 0.8rem;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        background-image: url('profiel.jpg');
+        background-size: cover;
+        background-position: center;
+  
+}
+section > div div:last-child p {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+section button {
+    background-color: red;
+    height: fit-content;
+    align-self: center;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+/******aside*****/
+
+aside{
+    width: 32%;
+    height: 60vh;
+    font-family: var(--mainFont);
+}
+aside > div {
+    display: flex;
+    justify-content: space-between;
+}
+aside > div div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+aside > div div:last-child span{
+    color: var(--primary);
+    font-size: 2rem;
+}
+/******main article***/
+
+article {
+    margin: 0.8rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+article > div {
+    display: flex;
+    gap: 1rem;
+}
+article > div div:last-of-type{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+article > div div:last-of-type p{
+   
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+}
+article > div div:last-of-type p span{
+   
+    font-size: 0.7rem!important;
+   
+    color: rgb(97, 97, 97);
+}
+ .image {
+    height: 7rem;
+    width:65%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
