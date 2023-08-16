@@ -30,6 +30,7 @@ nav ul li:first-of-type{
     align-items: center;
     gap: 1.5rem;
     color: rgb(97, 97, 97);
+    cursor: pointer;
 }
 /********** search bar in navbar**********/
 nav ul li:nth-child(2){
@@ -55,6 +56,7 @@ nav ul li:nth-child(2) i{
     border-left: none;
     border-radius: 0 3px 3px 0;
     background-color: rgb(237, 237, 237);
+    cursor: pointer;
 }
 /***********right icons navbar************/
 nav ul li:nth-child(3){
@@ -62,6 +64,7 @@ nav ul li:nth-child(3){
     align-items: center;
     gap: 1.6rem;
     color: rgb(97, 97, 97);
+    cursor: pointer;
 
 }
 nav ul li:nth-child(3) span:last-of-type {
@@ -207,6 +210,7 @@ aside > div div:last-child {
 }
 aside > div div:last-child span{
     color: var(--primary);
+    cursor: pointer;
     font-size: 2rem;
 }
 /******main article***/
