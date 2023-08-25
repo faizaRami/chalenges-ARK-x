@@ -15,8 +15,8 @@ else{
     console.log(message+" "+playerSelection+" beats "+computerSelection);
 }
 }
-
- let  playerSelection=prompt("enter Rock, Paper or Scissors");
+const Game=()=>{
+   let  playerSelection=prompt("enter Rock, Paper or Scissors");
   let myArray = [
     "Rock",
     "Paper",
@@ -26,4 +26,7 @@ else{
   let computerSelection = myArray[Math.floor(Math.random()*myArray.length)];
 //   call function playRound
   playRound (playerSelection , computerSelection);
+}
+Game();
+
  
