@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+rel="stylesheet"
+/>
+    <title>Document</title>
+</head>
+<body>
+  <!-- Navbar -->
+<!-- Navbar -->
+
+<!-- Navbar -->
+<!-- Navbar -->
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+    <!-- Container wrapper -->
+    <div class="container mx-5">
+      <!-- Toggle button -->
+      
+  <a class="navbar-brand mt-lg-0 ms-5" href="#">
+          <img
+            src="img/Logo.png"
+            height="70"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- <div class="d-flex align-items-center">
+    
+  
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+        Avatar
+    
+      </div> -->
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Navbar brand -->
+        
+        <!-- Left links -->
+        <ul class="navbar-nav space-between  mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Contact As</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" id="shop" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+  
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+        <!-- Avatar -->
+    
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+    <div id="cart">
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+        </div>
+        <ul class="item-list">
+            
+             <!-- Add more items here  -->
+        </ul>
+        <div class="total">
+            Total: <span id="total-price"></span>
+        </div>
+    </div>
+    <main class="main">
+        <!-- Start DEMO HTML (Use the following code into your project)-->
+        <div class="container">
+        
+             <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Products</h4>
+             <div class="row">
+               <div class="col-sm-6 col-md-4 col-lg-4 col-xs-6">
+                 <div class="shadow-sm card mb-3 product">
+                   <img class="product-img " src="./img/cam1.jpg" alt="prd1" onmouseover="animateImg(this)"
+                   onmouseout="normalImg(this)"/><button class="like-btn"><i class="fa-solid fa-heart like" style="color: #a3a5a8;"></i></button>
+                   <div class="card-body">
+                     <h5 class="card-title text-info bold product-name me-2">Camera FHD</h5>
+                     <p class="card-text text-warning product-price">2000 DH</p>
+                     <button class="btn badge badge-pill badge-secondary mt-2 float-right " type="button"
+                       data-action="add-to-cart">Add to cart</button>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-sm-6 col-md-4 col-lg-4 col-xs-6">
+                 <div class="shadow-sm card mb-3 product">
+                   <img class="product-img" src="./img/glorious-1.jpg" alt="prd2" onmouseover="animateImg(this)"
+                   onmouseout="normalImg(this)"/> <button class="like-btn" ><i class="fa-solid fa-heart like"  style="color: grey;"></i></button>
+                   <div class="card-body">
+                     <h5 class="card-title text-info product-name">Gold necklace</h5>
+                     <p class="card-text text-warning product-price">10000 DH</p>
+                     <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                     data-action="add-to-cart">Add to cart</button>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-sm-6 col-md-4 col-lg-4 col-xs-6">
+                <div class="shadow-sm card mb-3 product">
+                  <img class="product-img" src="./img/canape-1.jpg" alt="prd3" onmouseover="animateImg(this)"
+                  onmouseout="normalImg(this)"/><button class="like-btn"><i class="fa-solid fa-heart like" style="color: #a3a5a8;"></i></button>
+                  <div class="card-body">
+                    <h5 class="card-title text-info product-name">Single sofa</h5>
+                    <p class="card-text text-warning product-price">899 DH</p>
+                    <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button" 
+                    data-action="add-to-cart">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+             
+          
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xs-6">
+                <div class="shadow-sm card mb-3 product">
+                  <img class="product-img" src="./img/khatem.jpg" alt="prd1" onmouseover="animateImg(this)"
+                  onmouseout="normalImg(this)"/><button class="like-btn"><i class="fa-solid fa-heart like" style="color: #a3a5a8;"></i></button>
+                  <div class="card-body">
+                    <h5 class="card-title text-info bold product-name me-2">Diamond ring</h5>
+                    <p class="card-text text-warning product-price">25000 DH</p>
+                    <button class="btn badge badge-pill badge-secondary mt-2 float-right " type="button"
+                      data-action="add-to-cart">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xs-6">
+                <div class="shadow-sm card mb-3 product">
+                  <img class="product-img" src="./img/parfum.jpg" alt="prd2" onmouseover="animateImg(this)"
+                  onmouseout="normalImg(this)"/> <button class="like-btn" ><i class="fa-solid fa-heart like"  style="color: grey;"></i></button>
+                  <div class="card-body">
+                    <h5 class="card-title text-info product-name">Golden Black Parfum</h5>
+                    <p class="card-text text-warning product-price">800 DH</p>
+                    <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                    data-action="add-to-cart">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xs-6">
+               <div class="shadow-sm card mb-3 product">
+                 <img class="product-img" src="./img/magana.jpg" alt="prd3" onmouseover="animateImg(this)"
+                 onmouseout="normalImg(this)"/><button class="like-btn"><i class="fa-solid fa-heart like" style="color: #a3a5a8;"></i></button>
+                 <div class="card-body">
+                   <h5 class="card-title text-info product-name">HUBLOT wristwatch</h5>
+                   <p class="card-text text-warning product-price">5000 DH</p>
+                   <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button" 
+                   data-action="add-to-cart">Add to cart</button>
+                 </div>
+               </div>
+             </div>
+            </div>
+          
+            
+          
+<!--        
+           <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+             <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Cart</h4>
+             <div class="cart"></div>
+           </div> -->
+          </div>   
+        <!-- END EDMO HTML (Happy Coding!)-->
+    </main>
+    
+    
+    <script src="script.js"></script>
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+></script>
+</body>
+</html>
