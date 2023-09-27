@@ -24,6 +24,7 @@ const server = http.createServer(async (req, res) => {
 
   if (parsedUrl.pathname === "/weather") {
     if ('city' in parsedUrl.query) {
+      console.log(parsedUrl.query.city);
       for (let i = 0; i < cities.length; i++) {
         if (cities[i].name.toLowerCase() === parsedUrl.query.city.toLowerCase()) {
           const it = await Data (cities[i].lat, cities[i].lng);;
