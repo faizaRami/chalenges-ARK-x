@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= users.username %></title>
+  </head>
+  <body>
+    <h1>Welcome <%= users.username %> to your profile</h1>
+    <form method="POST" action="/profile">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">change</button>
+    </form>
+    <a href="/">Logout</a>
+  </body>
+</html>

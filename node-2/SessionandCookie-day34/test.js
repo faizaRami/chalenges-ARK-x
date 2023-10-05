@@ -17,7 +17,7 @@ app.use(session({
 app.set('view engine', 'ejs');
 
 // Server Variable to Store User Data
-const users = [];
+const users = [{ username:'user123', password :bcrypt.hashSync('user123',10) }];
 
 // Your registration, login, and other routes will go here
 
@@ -38,16 +38,18 @@ app.get('/login', (req, res) => {
   res.render('login'); // Create an EJS template for the login form
 });
 
-app.post('/login', async (req, res) => {
+app.post('/login', async (req, res) => { // async
   const { username, password } = req.body;
   const user = users.find((user) => user.username === username);
 
-  if (user && await bcrypt.compare(password, user.password)) {
+  if (user && await bcrypt.compare(password, user.password)) {  //  user.password === password
     req.session.userId = username; // Store user's unique identifier in the session
     res.cookie('sessionId', req.session.id, { maxAge: 3600000 }); // Set a session cookie (adjust maxAge as needed)
-    res.redirect('/dashboard');
+    // alert('sucess')
+    res.send('sucess');
   } else {
-    res.send('Invalid username or password');
+    res.send(`username value is ${username} and the passwd value is ${password}`);
+    // res.send('Invalid username or password');
   }
 });
 
