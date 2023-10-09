@@ -1,0 +1,44 @@
+<!-- views/chat.ejs -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+<body>
+    <h1>Welcome to the Chat</h1>
+    <div id="chat">
+        Chat messages will be displayed here 
+    </div>
+    <form id="message-form" action="/chat" method="post">
+        <input type="text" name="message" placeholder="Type your message">
+        <input type="submit" value="Send">
+    </form>
+    <script src="/main.js"></script>
+</body>
+</html> -->
+<!-- views/chat.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Welcome, <%= username %>!</h1>
+    <form action="/logout" method="GET">
+      <button class="logout-button" type="submit">Logout</button>
+    </form>
+   
+    <div class="chat-messages" id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Type your message..." />
+    <button id="send-button" type="button" onclick="sendMessage()">
+      Send
+    </button>
+  </div>
+   
+    <script src="socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
