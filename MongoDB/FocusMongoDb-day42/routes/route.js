@@ -1,8 +1,11 @@
 const express=require("express")
 const route= express.Router()
-const products= require("../models/products")
+// const products= require("../models/products")
 const {run}=require('../db')
-route.get('/home', (req, res) => {
+route.get('/home',async (req, res) => {
+  const db = await run();
+  const products = await db.collection("phones").find().toArray();
+  // res.send(phones); // Send the response here
     res.render('home', {products});
   });
 
@@ -120,20 +123,24 @@ route.get("/advancedSearch", async (req, res)=>{
           }
 })
 // Create a text index on the "name" and "description" fields
-async function createTextIndex() {
-  const db = await run();
-  await db.collection('phones').createIndex({ name: 'text', description: 'text' });
-}
+// async function createTextIndex() {
+//   const db = await run();
+//await db.collection('phones').createIndex({ name: 'text', description: 'text' });
 
+// }
+// createTextIndex();
  // This will create the index when your application starts
 
 // Define the route to handle text searches
 route.get("/text-search", async (req, res) => {
-  createTextIndex();
+
   const { query } = req.query;
 
   try {
     const db = await run();
+    // Create a text index on the "name" and "description" fields
+
+    await db.collection('phones').createIndex({ name: 'text', description: 'text' });
 
     // Use the $text operator to perform a text search on "name" and "description" fields
     const Products = await db
